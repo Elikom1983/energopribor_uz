@@ -113,6 +113,16 @@ var swiper5 = new Swiper("#logosrow2", {
   },
   mousewheel: true,
 });
+// Accordion toggle
+document.querySelectorAll(".acardion-header").forEach(header => {
+    header.addEventListener("click", () => {
+        let content = header.nextElementSibling;
+        content.classList.toggle("active");
+        header.classList.toggle("active");
+    });
+});
+
+// Price Range
 const minRange = document.getElementById("minRange");
 const maxRange = document.getElementById("maxRange");
 const minPrice = document.getElementById("minPrice");
@@ -120,29 +130,25 @@ const maxPrice = document.getElementById("maxPrice");
 const rangeTrack = document.querySelector(".range-track");
 
 function updateRange() {
-  let minVal = parseInt(minRange.value);
-  let maxVal = parseInt(maxRange.value);
+    let minVal = parseInt(minRange.value);
+    let maxVal = parseInt(maxRange.value);
 
-  // minimal farq
-  if (minVal > maxVal - 500000) {
-    minRange.value = maxVal - 500000;
-    minVal = maxVal - 500000;
-  }
+    if (minVal > maxVal - 10000) { // minimal farq
+        minRange.value = maxVal - 10000;
+        minVal = maxVal - 10000;
+    }
 
-  // qiymatlarni chiqarish
-  minPrice.textContent = minVal.toLocaleString("ru-RU");
-  maxPrice.textContent = maxVal.toLocaleString("ru-RU");
+    minPrice.textContent = minVal.toLocaleString();
+    maxPrice.textContent = maxVal.toLocaleString();
 
-  // progress chizig‘ini joylashtirish
-  let percent1 = (minVal / minRange.max) * 100;
-  let percent2 = (maxVal / maxRange.max) * 100;
-  rangeTrack.style.left = percent1 + "%";
-  rangeTrack.style.width = (percent2 - percent1) + "%";
+    let percent1 = (minVal / minRange.max) * 100;
+    let percent2 = (maxVal / maxRange.max) * 100;
+
+    rangeTrack.style.left = percent1 + "%";
+    rangeTrack.style.width = (percent2 - percent1) + "%";
 }
 
-// eventlar
 minRange.addEventListener("input", updateRange);
 maxRange.addEventListener("input", updateRange);
 
-// sahifa yuklanganda ishga tushirish
-updateRange();
+updateRange(); // boshlang‘ich yuklashda

@@ -129,282 +129,478 @@
 
 
     </header>
-    <div class="breadcrumb">
-        <div class="container">
-            <ul>
-                <li><a href="#">Bosh sahifa/</a></li>
-                <li><a href="#">Katalog</a></li>
 
-            </ul>
-        </div>
-    </div>
 
 
     <section class="katalog">
         <div class="container">
-            <div class="sidebar">
-                <aside class="">
-                    <div class="filter">
-                        <div class="filterHeader">
-                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="breadcrumb">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Bosh sahifa/</a></li>
+                        <li><a href="#">Katalog</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="sidebar">
+                    <aside class="">
+                        <div class="filter">
+                            <div class="filterHeader">
+                                <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_194_2393)">
+                                            <path d="M4 6H20" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6 12H18" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M9 18H15" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_194_2393">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                    Filter</h3>
+                                <span class="clear">Tozalash</span>
+                            </div>
+                            <aside class="">
+                                <div class="filters">
+                                    <div class="accardion-contener">
+                                        <div class="acardion-header">
+                                            <h4>Narx</h4>
+                                            <span class="toggle-icon">
+                                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="acardion-content">
+                                            <div class="slider-container">
+                                                <input type="range" id="minRange" min="0" max="5750000" value="50000"
+                                                    step="1000">
+                                                <input type="range" id="maxRange" min="50000" max="5750000"
+                                                    value="2100000" step="1000">
+                                                <div class="range-track"></div>
+                                            </div>
+                                            <div class="price-values">
+                                                <span id="minPrice">50 000</span> —
+                                                <span id="maxPrice">2 100 000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accardion-contener">
+                                        <div class="acardion-header">
+                                            <h4>Brend</h4>
+                                            <span class="toggle-icon">
+                                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="acardion-content">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand1">
+                                                <label for="brand1">Brend 1</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand2">
+                                                <label for="brand2">Brend 2</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand3">
+                                                <label for="brand3">Brend 3</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand4">
+                                                <label for="brand4">Brend 4</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand5">
+                                                <label for="brand5">Brend 5</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="accardion-contener">
+                                        <div class="acardion-header">
+                                            <h4>Rang</h4>
+                                            <span class="toggle-icon">
+                                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="acardion-content">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand1">
+                                                <label for="brand1">Brend 1</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand2">
+                                                <label for="brand2">Brend 2</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand3">
+                                                <label for="brand3">Brend 3</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand4">
+                                                <label for="brand4">Brend 4</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="brand5">
+                                                <label for="brand5">Brend 5</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="acardion-content">
+                                        <div class="acardion-header">
+                                            <h4>Material</h4>
+                                            <span class="toggle-icon">
+                                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="acardion-content">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="material1">
+                                                <label for="material1">Material1</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="material2">
+                                                <label for="material2">Material2</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="material3">
+                                                <label for="material3">Material3</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="material4">
+                                                <label for="material4">Material4</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="material5">
+                                                <label for="material5">Material5</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </aside>
+                        </div>
+
+
+
+                </div>
+                <div class="products">
+                    <div class="product_header">
+                        <h3>Barometrlar <span>(2147 tadan 12 ta ko‘rsatilmoqda</span></h3>
+                        <div class="sortby">
+                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_194_2393)">
-                                        <path d="M4 6H20" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                    <g clip-path="url(#clip0_412_2829)">
+                                        <path d="M4 6H13" stroke="#303030" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" />
-                                        <path d="M6 12H18" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        <path d="M4 12H11" stroke="#303030" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" />
-                                        <path d="M9 18H15" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        <path d="M4 18H11" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15 15L18 18L21 15" stroke="#303030" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18 6V18" stroke="#303030" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                     </g>
                                     <defs>
-                                        <clipPath id="clip0_194_2393">
+                                        <clipPath id="clip0_412_2829">
                                             <rect width="24" height="24" fill="white" />
                                         </clipPath>
                                     </defs>
                                 </svg>
-
-                                Filter</h3>
-                            <span class="clear">Tozalash</span>
-                        </div>
-                        <aside class="">
-                            <div class="price-filter">
-                                <div class="acardion-header">
-                                    <h4>Цена</h4>
-                                    <span class="toggle-icon">
-                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </div>
-
-                                <div class="acardion-content">
-                                    <div class="slider-container">
-                                        <input type="range" id="minRange" min="0" max="10000000" value="1000000"
-                                            step="100000">
-                                        <input type="range" id="maxRange" min="0" max="10000000" value="8000000"
-                                            step="100000">
-                                        <div class="range-track"></div>
-                                    </div>
-                                    <p>
-                                        <span id="minPrice">1 000 000</span> so‘m —
-                                        <span id="maxPrice">8 000 000</span> so‘m
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </aside>
-                    </div>
-                </aside>
-                <aside>
-                    <div class="brend-filter">
-                        <div class="acardion-header">
-                            <h4>Brend</h4>
-                            <span class="toggle-icon">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <div class="acardion-content">
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand1">
-                                <label for="brand1">Brend 1</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand2">
-                                <label for="brand2">Brend 2</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand3">
-                                <label for="brand3">Brend 3</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand4">
-                                <label for="brand4">Brend 4</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand5">
-                                <label for="brand5">Brend 5</label>
-                            </div>
-
-                        </div>
-                </aside>
-
-                <aside>
-                    <div class="color-filter">
-                        <div class="acardion-header">
-                            <h4>Rang</h4>
-                            <span class="toggle-icon">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <div class="acardion-content">
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand1">
-                                <label for="brand1">Brend 1</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand2">
-                                <label for="brand2">Brend 2</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand3">
-                                <label for="brand3">Brend 3</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand4">
-                                <label for="brand4">Brend 4</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="brand5">
-                                <label for="brand5">Brend 5</label>
-                            </div>
-
-                        </div>
-                </aside>
-                   <aside>
-                    <div class="color-filter">
-                        <div class="acardion-header">
-                            <h4>Material</h4>
-                            <span class="toggle-icon">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 1L7 7L1 0.999999" stroke="#A6A6A6" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <div class="acardion-content">
-                            <div class="checkbox">
-                                <input type="checkbox" id="material1">
-                                <label for="material1">Material1</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="material2">
-                                <label for="material2">Material2</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="material3">
-                                <label for="material3">Material3</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="material4">
-                                <label for="material4">Material4</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="material5">
-                                <label for="material5">Material5</label>
-                            </div>
-
-                        </div>
-                </aside>
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <footer>
-        <div class="container">
-            <div class="footerbox">
-                <div class="footerbox_top">
-                    <div class="footerbox1">
-                        <h3>Bog‘lanish</h3>
-                        <p>Toshkent shahri, Olmazor tumani, Shimoliy Olmazor ko‘chasi, 4/1</p>
-                        <a href="mailto:2482003@energopribor.uz" class="email">2482003@energopribor.uz</a>
-                        <a href="tel:+998712000000" class="phone">+998 (71) 200-00-00</a>
-                        <div class="socialbox">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-
+                                Saralash:</span>
+                            <select name="sort" id="sort">
+                                <option value="default">Standart</option>
+                                <option value="price-asc">Narx: Eng pastdan eng yuqoriga</option>
+                                <option value="price-desc">Narx: Eng yuqoridan eng pastga</option>
+                                <option value="name-asc">Nomi: A dan Z gacha</option>
+                                <option value="name-desc">Nomi: Z dan A gacha</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="footerbox2">
-                        <h3>Категориялар</h3>
-                        <ul>
-                            <li><a href="#">Kategoriya 1</a></li>
-                            <li><a href="#">Kategoriya 2</a></li>
-                            <li><a href="#">Kategoriya 3</a></li>
-                            <li><a href="#">Kategoriya 4</a></li>
-                            <li><a href="#">Kategoriya 5</a></li>
+                    <ul class="product_list">
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
+                        <li class="product_card">
+                            <div class="product_image">
+                                <img src="img/prodcut.png" alt="product">
+                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                            </div>
+                            <div class="infobox">
+                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                <p>1 200 000 so'm</p>
+                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                    qo‘shish</a>
+                            </div>
+                        </li>
 
-                        </ul>
-                    </div>
-                    <div class="footerbox3">
-                        <h3>Sahifalar</h3>
-                        <ul>
-                            <li><a href="#">Kompaniya haqida</a></li>
-                            <li><a href="#">Yetkazib berish va to'lov</a></li>
-                            <li><a href="#">Maxfiylik siyosati</a></li>
-                            <li><a href="#">Foydalanish shartlari</a></li>
-                            <li><a href="#">Aloqa</a></li>
 
-                        </ul>
-                    </div>
 
-                    <div class="footerbox4">
-                        <h3><i class="fa-regular fa-headphones"></i>Qo‘llab-quvvatlash</h3>
-                        <p>Savollaringiz bo‘lsa, mutaxassislarimiz sizga yordam berishadi.</p>
-                        <a href="#" class="btn">Bepul qo‘ng‘iroq</a>
-                    </div>
-                </div>
-                <div class="footerbox_bottom">
-                    <h3>Bog‘lanish</h3>
-                    <ul>
-                        <li><a href="#"><img src="img/humocard1 1.png"></a></li>
-                        <li><a href="#"><img src="img/uzcard 1.png"></a></li>
-                        <li><a href="#"><img src="img/g4158.png"></a></li>
+
+
                     </ul>
+                    <div class="pagination">
+                        <ul class="listpagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">›</a></li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
         </div>
-        <div class="copyright">
+
+
+
+
+
+        <footer>
             <div class="container">
-                <div class="copyrightbox">
-                    <p>Energopribor</p>
-                    <p>© 2000-2025 Energopribor. Mahsulotlar sertifikatlangan. Xizmatlar litsenziyalangan.</p>
+                <div class="footerbox">
+                    <div class="footerbox_top">
+                        <div class="footerbox1">
+                            <h3>Bog‘lanish</h3>
+                            <p>Toshkent shahri, Olmazor tumani, Shimoliy Olmazor ko‘chasi, 4/1</p>
+                            <a href="mailto:2482003@energopribor.uz" class="email">2482003@energopribor.uz</a>
+                            <a href="tel:+998712000000" class="phone">+998 (71) 200-00-00</a>
+                            <div class="socialbox">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="footerbox2">
+                            <h3>Категориялар</h3>
+                            <ul>
+                                <li><a href="#">Kategoriya 1</a></li>
+                                <li><a href="#">Kategoriya 2</a></li>
+                                <li><a href="#">Kategoriya 3</a></li>
+                                <li><a href="#">Kategoriya 4</a></li>
+                                <li><a href="#">Kategoriya 5</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footerbox3">
+                            <h3>Sahifalar</h3>
+                            <ul>
+                                <li><a href="#">Kompaniya haqida</a></li>
+                                <li><a href="#">Yetkazib berish va to'lov</a></li>
+                                <li><a href="#">Maxfiylik siyosati</a></li>
+                                <li><a href="#">Foydalanish shartlari</a></li>
+                                <li><a href="#">Aloqa</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="footerbox4">
+                            <h3><i class="fa-regular fa-headphones"></i>Qo‘llab-quvvatlash</h3>
+                            <p>Savollaringiz bo‘lsa, mutaxassislarimiz sizga yordam berishadi.</p>
+                            <a href="#" class="btn">Bepul qo‘ng‘iroq</a>
+                        </div>
+                    </div>
+                    <div class="footerbox_bottom">
+                        <h3>Bog‘lanish</h3>
+                        <ul>
+                            <li><a href="#"><img src="img/humocard1 1.png"></a></li>
+                            <li><a href="#"><img src="img/uzcard 1.png"></a></li>
+                            <li><a href="#"><img src="img/g4158.png"></a></li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="upbtn">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="copyrightbox">
+                        <p>Energopribor</p>
+                        <p>© 2000-2025 Energopribor. Mahsulotlar sertifikatlangan. Xizmatlar litsenziyalangan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="upbtn">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
 
-    </footer>
+        </footer>
 
-    <script src='js/all.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src='js/all.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src='js/all.min.js'></script>
+        <script src='js/all.min.js'></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src='js/main.js'></script>
-
-
-
-    <script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src='js/main.js'></script>
 
 
-    </script>
+
+        <script>
+
+
+        </script>
 
 </body>
 

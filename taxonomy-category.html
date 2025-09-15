@@ -314,8 +314,61 @@
                 </div>
                 <div class="products">
                     <div class="product_header">
-                        <h3>Barometrlar <span>(2147 tadan 12 ta ko‘rsatilmoqda</span></h3>
+                        <h3>Barometrlar <span>(2147 tadan 12 ta ko‘rsatilmoqda)</span></h3>
                         <div class="sortby">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_412_2829)">
+                                        <path d="M4 6H13" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4 12H11" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4 18H11" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M15 15L18 18L21 15" stroke="#303030" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18 6V18" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_412_2829">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Saralash:</span>
+                            <select name="sort" id="sort">
+                                <option value="default">Standart</option>
+                                <option value="price-asc">Narx: Eng pastdan eng yuqoriga</option>
+                                <option value="price-desc">Narx: Eng yuqoridan eng pastga</option>
+                                <option value="name-asc">Nomi: A dan Z gacha</option>
+                                <option value="name-desc">Nomi: Z dan A gacha</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="mobilfilter ">
+                        <div class="filtericon buttonfiletr">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_194_2393)">
+                                    <path d="M4 6H20" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M6 12H18" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 18H15" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_194_2393">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Filter
+                        </div>
+                        <div class="sortby buttonfiletr">
                             <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_412_2829)">
@@ -345,262 +398,275 @@
                                 <option value="name-desc">Nomi: Z dan A gacha</option>
                             </select>
                         </div>
+                        <div class="numberfilter buttonfiletr">
+                            <select name="numbers" id="numbers">
+                                <option value="default">20</option>
+                                <option value="price-asc">30</option>
+                                <option value="price-desc">40</option>
+
+                            </select>
+                        </div>
+
                     </div>
-                    <ul class="product_list">
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
-                        <li class="product_card">
-                            <div class="product_image">
-                                <img src="img/prodcut.png" alt="product">
-                                <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
-                            </div>
-                            <div class="infobox">
-                                <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
-                                <p>1 200 000 so'm</p>
-                                <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
-                                    qo‘shish</a>
-                            </div>
-                        </li>
+                    <div class="product_container">
+                        <div class="product_wrapper">
+                            <ul class="product_list">
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
+                                <li class="product_card">
+                                    <div class="product_image">
+                                        <img src="img/prodcut.png" alt="product">
+                                        <i class="fa-regular fa-heart" id="idprdouxt1" data-prdoct="id2"></i>
+                                    </div>
+                                    <div class="infobox">
+                                        <h3>Havo bosimi, oqimi va haroratini o‘lchash qurilmasi</h3>
+                                        <p>1 200 000 so'm</p>
+                                        <a href="#" class="btn cart"><i class="fas fa-shopping-cart"></i> Savatga
+                                            qo‘shish</a>
+                                    </div>
+                                </li>
 
 
 
 
 
-                    </ul>
-                    <div class="pagination">
-                        <ul class="listpagination">
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">›</a></li>
+                            </ul>
+                            <div class="pagination">
+                                <ul class="listpagination">
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">›</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footerbox">
+                <div class="footerbox_top">
+                    <div class="footerbox1">
+                        <h3>Bog‘lanish</h3>
+                        <p>Toshkent shahri, Olmazor tumani, Shimoliy Olmazor ko‘chasi, 4/1</p>
+                        <a href="mailto:2482003@energopribor.uz" class="email">2482003@energopribor.uz</a>
+                        <a href="tel:+998712000000" class="phone">+998 (71) 200-00-00</a>
+                        <div class="socialbox">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="footerbox2">
+                        <h3>Категориялар</h3>
+                        <ul>
+                            <li><a href="#">Kategoriya 1</a></li>
+                            <li><a href="#">Kategoriya 2</a></li>
+                            <li><a href="#">Kategoriya 3</a></li>
+                            <li><a href="#">Kategoriya 4</a></li>
+                            <li><a href="#">Kategoriya 5</a></li>
+
                         </ul>
                     </div>
+                    <div class="footerbox3">
+                        <h3>Sahifalar</h3>
+                        <ul>
+                            <li><a href="#">Kompaniya haqida</a></li>
+                            <li><a href="#">Yetkazib berish va to'lov</a></li>
+                            <li><a href="#">Maxfiylik siyosati</a></li>
+                            <li><a href="#">Foydalanish shartlari</a></li>
+                            <li><a href="#">Aloqa</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footerbox4">
+                        <h3><i class="fa-regular fa-headphones"></i>Qo‘llab-quvvatlash</h3>
+                        <p>Savollaringiz bo‘lsa, mutaxassislarimiz sizga yordam berishadi.</p>
+                        <a href="#" class="btn">Bepul qo‘ng‘iroq</a>
+                    </div>
+                </div>
+                <div class="footerbox_bottom">
+                    <h3>Bog‘lanish</h3>
+                    <ul>
+                        <li><a href="#"><img src="img/humocard1 1.png"></a></li>
+                        <li><a href="#"><img src="img/uzcard 1.png"></a></li>
+                        <li><a href="#"><img src="img/g4158.png"></a></li>
+                    </ul>
 
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <footer>
+        <div class="copyright">
             <div class="container">
-                <div class="footerbox">
-                    <div class="footerbox_top">
-                        <div class="footerbox1">
-                            <h3>Bog‘lanish</h3>
-                            <p>Toshkent shahri, Olmazor tumani, Shimoliy Olmazor ko‘chasi, 4/1</p>
-                            <a href="mailto:2482003@energopribor.uz" class="email">2482003@energopribor.uz</a>
-                            <a href="tel:+998712000000" class="phone">+998 (71) 200-00-00</a>
-                            <div class="socialbox">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-
-                            </div>
-                        </div>
-                        <div class="footerbox2">
-                            <h3>Категориялар</h3>
-                            <ul>
-                                <li><a href="#">Kategoriya 1</a></li>
-                                <li><a href="#">Kategoriya 2</a></li>
-                                <li><a href="#">Kategoriya 3</a></li>
-                                <li><a href="#">Kategoriya 4</a></li>
-                                <li><a href="#">Kategoriya 5</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="footerbox3">
-                            <h3>Sahifalar</h3>
-                            <ul>
-                                <li><a href="#">Kompaniya haqida</a></li>
-                                <li><a href="#">Yetkazib berish va to'lov</a></li>
-                                <li><a href="#">Maxfiylik siyosati</a></li>
-                                <li><a href="#">Foydalanish shartlari</a></li>
-                                <li><a href="#">Aloqa</a></li>
-
-                            </ul>
-                        </div>
-
-                        <div class="footerbox4">
-                            <h3><i class="fa-regular fa-headphones"></i>Qo‘llab-quvvatlash</h3>
-                            <p>Savollaringiz bo‘lsa, mutaxassislarimiz sizga yordam berishadi.</p>
-                            <a href="#" class="btn">Bepul qo‘ng‘iroq</a>
-                        </div>
-                    </div>
-                    <div class="footerbox_bottom">
-                        <h3>Bog‘lanish</h3>
-                        <ul>
-                            <li><a href="#"><img src="img/humocard1 1.png"></a></li>
-                            <li><a href="#"><img src="img/uzcard 1.png"></a></li>
-                            <li><a href="#"><img src="img/g4158.png"></a></li>
-                        </ul>
-
-                    </div>
+                <div class="copyrightbox">
+                    <p>Energopribor</p>
+                    <p>© 2000-2025 Energopribor. Mahsulotlar sertifikatlangan. Xizmatlar litsenziyalangan.</p>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <div class="copyrightbox">
-                        <p>Energopribor</p>
-                        <p>© 2000-2025 Energopribor. Mahsulotlar sertifikatlangan. Xizmatlar litsenziyalangan.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="upbtn">
-                <i class="fa-solid fa-angle-up"></i>
-            </div>
+        </div>
+        <div class="upbtn">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
 
-        </footer>
+    </footer>
 
-        <script src='js/all.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src='js/all.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <script src='js/all.min.js'></script>
+    <script src='js/all.min.js'></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <script src='js/main.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src='js/main.js'></script>
 
 
 
-        <script>
+    <script>
 
 
-        </script>
+    </script>
 
 </body>
 

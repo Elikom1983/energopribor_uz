@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.slider_swiper', {
   loop: true,
   slidesPerView: 'auto',
   centeredSlides: true,
@@ -17,29 +17,22 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-  var swiper2 = new Swiper("#sliderbox", {
+const swiper2 = new Swiper("#sliderbox", {
   slidesPerView: 1.5,
   spaceBetween: 20,
   loop: true,
   navigation: {
-    nextEl: '#swiper-button-next',
-    prevEl: '#swiper-button-prev',
+    nextEl: '#sliderbox-next',
+    prevEl: '#sliderbox-prev',
   },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
   breakpoints: {
-      1200: {
-      slidesPerView: 5,
-    },
-     768: {
-      slidesPerView: 2.5,
-    },
-    500: {
-      slidesPerView: 1.5,
-    },
-   
+    1200: { slidesPerView: 5 },
+    768: { slidesPerView: 2.5 },
+    500: { slidesPerView: 1.5 },
   }
 });
 
@@ -48,29 +41,23 @@ var swiper3 = new Swiper("#sliderbox2", {
   spaceBetween: 20,
   loop: true,
   navigation: {
-    nextEl: '#swiper-button-next2',
-    prevEl: '#swiper-button-prev2',
+    nextEl: '#sliderbox2-next',
+    prevEl: '#sliderbox2-prev',
   },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
   breakpoints: {
-       1200: {
-      slidesPerView: 5,
-    },
-     768: {
-      slidesPerView: 2.5,
-    },
-    500: {
-      slidesPerView: 1.5,
-    },
-   
+    1200: { slidesPerView: 5 },
+    768: { slidesPerView: 2.5 },
+    500: { slidesPerView: 1.5 },
   }
 });
 
+
 // 1-qator (o‘ngga yuradi)
-var swiper4 = new Swiper("#logosrow1", {
+const swiper4 = new Swiper("#logosrow1", {
   slidesPerView: 2,
   spaceBetween: 20,
   loop: true,
@@ -122,6 +109,45 @@ document.querySelectorAll(".acardion-header").forEach(header => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".acardion_header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+      const item = this.parentElement;
+
+      if (item.classList.contains("open")) {
+        // yopish
+        content.style.height = content.scrollHeight + "px"; 
+        requestAnimationFrame(() => {
+          content.style.height = "0";
+        });
+        item.classList.remove("open");
+      } else {
+        // ochish
+        item.classList.add("open");
+        content.style.height = content.scrollHeight + "px";
+
+        // animatsiya tugagach auto qilish (moslashuvchan bo‘lishi uchun)
+        content.addEventListener("transitionend", () => {
+          if (item.classList.contains("open")) {
+            content.style.height = "auto";
+          }
+        }, { once: true });
+      }
+    });
+  });
+});
+ const overlay = document.getElementById("overlay");
+                    const ytVideo = document.getElementById("ytVideo");
+
+                    overlay.addEventListener("click", () => {
+                        overlay.style.display = "none"; // overlay yo‘qoladi
+                        ytVideo.style.display = "block"; // iframe ko‘rinadi
+                        ytVideo.src = "https://www.youtube.com/embed/DM3WFDZapzw?autoplay=1"; // autoplay bilan yuklanadi
+                    });
+
 // Price Range
 const minRange = document.getElementById("minRange");
 const maxRange = document.getElementById("maxRange");
@@ -152,3 +178,8 @@ minRange.addEventListener("input", updateRange);
 maxRange.addEventListener("input", updateRange);
 
 updateRange(); // boshlang‘ich yuklashda
+
+
+
+// main.js
+

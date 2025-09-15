@@ -890,8 +890,51 @@ color: var(--black);
             line-height: 100%;
             letter-spacing: 0%;     
         }
-        li:
+       
       }
+      .faq{
+        background: #EFEFEF;
+        padding: 50px 0;
+
+      }
+      .acardion_box{
+        width: 80%;
+            margin: 0 auto;
+        .acardion_item{
+            border-bottom: 1px solid gray;
+             padding: 20px;
+
+          .acardion_header{
+              display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+           
+          }
+          .acardion_content{
+            height: 0;
+            overflow: hidden;
+            transition: all 5ms linear;
+          }
+
+            
+        }
+      }
+  .acardion_content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+.acardion_item.open .btn{
+    transform: rotate(180deg);
+
+}
+.acardion_item.open .acardion_content {
+  height: 100%; /* yetarlicha katta raqam qo‘ying */
+  padding: 20px 0;
+}
+
         @media screen and (max-width: 1200px) {
             .header_top_box{
                 .header_top_left a{
@@ -936,6 +979,86 @@ color: var(--black);
             width: 11%; 
         } 
     }
+.container_about{
+    max-width: 800px;
+    margin: 0 auto;
+}
+     .video-wrapper {
+                        position: relative;
+                       
+                        margin: 0 auto;
+
+
+                    }
+
+                    video {
+                        width: 100%;
+                        display: block;
+                    }
+
+                    /* Олдинги расм */
+                    .video-overlay {
+
+                        inset: 0;
+                        background: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        cursor: pointer;
+                        border-radius: 20px;
+                    }
+
+                    .video-overlay img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+
+                    /* Play tugma */
+                    .play-btn {
+                        position: absolute;
+                        font-size: 70px;
+                        color: white;
+                        text-shadow: 0 0 15px black;
+                        pointer-events: none;
+                        /* клик overlay'га ўтади */
+                    }
+                    .banner_about{
+                        padding: 50px 0;
+                        .banner_about_box{
+                            display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            justify-content: space-between;
+                            gap: 20px;
+                           
+                             li{
+                                background: #fff;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                border-radius: 20px;
+                                padding: 20px;
+                               
+                                min-height: 180px;
+                                gap: 20px;
+                             }
+                             h3{
+                                font-family: Nunito Sans;
+                                font-weight: 700;
+                                font-style: Bold;
+                                font-size: 36px;
+
+                                line-height: 100%;
+                                letter-spacing: 0%;
+                                text-align: center;
+                                color: #1c70d0;
+
+                             }
+                        }
+                    }
          @media screen and (max-width: 950px) {
            
            .header_top_center ul li a {
